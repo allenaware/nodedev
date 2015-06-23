@@ -16,6 +16,8 @@ node test.js
 
 ***Test with get requset: http://localhost:8888?guid=xxxxx&value=vvvvv***
 
+redis hash map "win" will get the key guid=xxxx and value vvvv 
+
 
 
 
