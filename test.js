@@ -8,6 +8,6 @@ client.on("error", function (err) {
 });
 http.createServer(function (req, res) {
     var params = url.parse(req.url, true).query;
-   //validate the parameters
+   //validate the parameters and deal with different kinds of request
     client.hset("win", params.guid,params.value,redis.print);
 }).listen(8888);
